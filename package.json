@@ -1,0 +1,24 @@
+{
+  "name": "carapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "start": "npm run build && node ./dist/app.js",
+    "test": "nodemon ./dist/app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "express": "~4.16.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "nodemon": "^2.0.12"
+  }
+}
