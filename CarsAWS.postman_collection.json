@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "dfd8509c-a57f-46c5-9075-30e3bd83f723",
+		"name": "Cars AWS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create car (API Gateway)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"make\": \"toyota\",\n    \"model\": \"corolla\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://03xss6gpj0.execute-api.us-east-2.amazonaws.com/v1/",
+					"protocol": "https",
+					"host": [
+						"03xss6gpj0",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get cars (API Gateway)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://03xss6gpj0.execute-api.us-east-2.amazonaws.com/v1",
+					"protocol": "https",
+					"host": [
+						"03xss6gpj0",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a car - env variable req. (API Gateway)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://03xss6gpj0.execute-api.us-east-2.amazonaws.com/v1/{{carId}}",
+					"protocol": "https",
+					"host": [
+						"03xss6gpj0",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1",
+						"{{carId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a car (API Gateway)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"make\": \"toyota\",\n    \"model\": \"tacoma\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://03xss6gpj0.execute-api.us-east-2.amazonaws.com/v1/54",
+					"protocol": "https",
+					"host": [
+						"03xss6gpj0",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1",
+						"54"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete car - env variable req. (API Gateway)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://03xss6gpj0.execute-api.us-east-2.amazonaws.com/v1/{{carId}}",
+					"protocol": "https",
+					"host": [
+						"03xss6gpj0",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1",
+						"{{carId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete all cars (API Gateway)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://03xss6gpj0.execute-api.us-east-2.amazonaws.com/v1/",
+					"protocol": "https",
+					"host": [
+						"03xss6gpj0",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get car count and date (AWS Lambda)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
